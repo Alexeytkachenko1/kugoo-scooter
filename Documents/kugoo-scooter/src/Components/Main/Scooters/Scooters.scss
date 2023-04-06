@@ -1,0 +1,23 @@
+.scooters {
+  margin-top: 81px;
+}
+.scooters-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.scooters-header {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 51px;
+  /* identical to box height */
+
+  text-transform: uppercase;
+
+  /* Black */
+
+  color: #282739;
+  margin-bottom: 50px;
+}

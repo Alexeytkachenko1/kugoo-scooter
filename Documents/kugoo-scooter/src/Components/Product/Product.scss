@@ -1,0 +1,345 @@
+.product {
+  //   display: flex;
+}
+
+.product-card {
+  display: flex;
+}
+.product--card-photo {
+  width: 570px;
+  height: 506px;
+  margin-right: 64px;
+  margin-top: 77px;
+}
+// =======product-right=======
+
+.product-right {
+}
+.product-card-header {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 51px;
+  /* identical to box height */
+
+  text-transform: uppercase;
+
+  /* Black */
+
+  color: #282739;
+  margin-top: 89px;
+}
+.product-card-statistic-list {
+  display: flex;
+  margin-bottom: 20px;
+}
+.product-card-statistic-item:not(:last-child) {
+  margin-right: 20px;
+}
+.product-card-statistic {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 17px;
+
+  /* Gray 600 */
+
+  color: #5d6c7b;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.product-card__instock-list {
+  display: flex;
+  margin-bottom: 30px;
+}
+.product-card__instock-item:not(:last-child) {
+  margin-right: 42px;
+}
+.product-card__instock-button {
+  border: none;
+  background-color: transparent;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+
+  /* Black */
+
+  color: #282739;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+.product-card__price {
+  display: flex;
+}
+.product-card__price-header {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 36px;
+  text-transform: uppercase;
+
+  /* Black */
+
+  color: #282739;
+  margin-right: 79px;
+}
+.product-card__price-button {
+  padding-left: 53px;
+  display: flex;
+  flex-direction: column;
+  background: #f4f7fb;
+  border-radius: 5px;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+
+  /* Black */
+
+  color: #282739;
+  border: none;
+}
+.product-card__price-span {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 17px;
+
+  /* Gray 600 */
+
+  color: #5d6c7b;
+}
+.product-card__equipment {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.product-card__equipment-header {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23px;
+
+  /* Black */
+
+  color: #282739;
+}
+.product-card__equipment-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.product-card__equipment-item {
+  margin-right: 20px;
+}
+.product-card__equipment-button {
+  width: 227px;
+  height: 80px;
+  border: 2px solid #eaebed;
+  background-color: #fff;
+
+  border-radius: 10px;
+
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+
+  /* Black */
+
+  color: #282739;
+}
+.product-card__tire {
+  margin-top: 60px;
+  display: flex;
+}
+.product-card__tire-list {
+}
+.product-card__tire-item {
+}
+.product-card__tire-text {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+
+  /* Gray 600 */
+
+  color: #5d6c7b;
+}
+.product-card__tire-text-desc {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+
+  color: #282739;
+}
+.product-card__tire-text-plus {
+  /* 14 px (regular) */
+
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+
+  /* Black */
+
+  color: #282739;
+}
+.product-card__tire-text-price {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+
+  /* Black */
+
+  color: #282739;
+}
+.product-card__tire-button {
+  padding-top: 62px;
+  margin-left: 100px;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+
+  /* Purple */
+
+  color: #6f73ee;
+  border: none;
+  background-color: transparent;
+}
+.product-card__warranty {
+}
+.product-card__warranty-header {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23px;
+
+  /* Black */
+
+  color: #282739;
+}
+.product-card__warranty-list {
+  display: flex;
+}
+.product-card__warranty-item {
+  margin-right: 20px;
+}
+.product-card__warranty-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 227px;
+  height: 126px;
+  border: 1.5px solid #eaebed;
+  border-radius: 10px;
+  background-color: #fff;
+
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  /* identical to box height */
+
+  /* Black */
+
+  color: #282739;
+}
+.product-card__warranty-button-cost {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+
+  /* Gray 600 */
+
+  color: #5d6c7b;
+}
+.product-card__buy {
+}
+.product-card__buy-wrapper {
+}
+.product-card__buy-header {
+}
+.product-card__buy-svg-heart {
+}
+.product-card__buy-delivery {
+}
+.product-card__buy-list {
+}
+.product-card__buy-item {
+}
+.product-card__buy-button-buy {
+}
+.product-card__buy-button-cart {
+}
+// =======product-about=======
+
+.product-about {
+}
+.product-about-list {
+}
+.product-about__item {
+}
+.product-about__button {
+}
+.product-about__about-wrapper {
+}
+.product-about__about {
+}
+.product-about__about-header {
+}
+.product-about__about-description {
+}
+.product-about__equipment {
+}
+.product-about__equipment-header {
+}
+.product-about__equipment-list {
+}
+.product-about__equipment-item {
+}
+.product-about__equipment-text {
+}
+.product-about__equipment-button {
+}
+.product-about__peculiarities {
+}
+.product-about__peculiarities-list {
+}
+.product-about__peculiarities-item {
+}
+.product-about__peculiarities-button {
+}
+.card-button {
+}

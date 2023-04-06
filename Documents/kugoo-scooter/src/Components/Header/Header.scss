@@ -1,0 +1,90 @@
+header {
+  background-color: transparent;
+  // position: fixed;
+  width: 100%;
+
+  // top: 0;
+  // left: 0;
+
+  z-index: 10;
+  transition: 0.7s;
+}
+.header-main {
+  padding-top: 27px;
+  padding-bottom: 35px;
+  display: flex;
+}
+.header-logo {
+  display: block;
+  width: 116px;
+  height: 43px;
+  background-image: url("../../assets/img/Kugoo.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 35px;
+}
+.header-catalog {
+  width: 114px;
+  height: 40px;
+  background: #6f73ee;
+  border: 1.5px;
+  border-radius: 5px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.header-catalog-svg {
+  margin-right: 13px;
+}
+.header-catalog-span {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23px;
+
+  color: #ffffff;
+}
+
+.header-search {
+  margin-right: 47px;
+}
+.header-basket {
+  border: none;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.header-basket-img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.header-basket-span {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+}
+.header-nav {
+  background: #f4f7fb;
+  display: flex;
+  padding: 10px 0;
+}
+.header-nav a {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+
+  /* Black */
+
+  color: #282739;
+}
+.header-nav a:not(:last-child) {
+  margin-right: 50px;
+}

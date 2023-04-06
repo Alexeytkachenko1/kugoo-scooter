@@ -1,0 +1,102 @@
+.card-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: calc((1140px - 8 * 15px) / 4);
+
+  margin: 15px;
+  border: 1.5px solid #eaebed;
+  border-radius: 10px;
+}
+.card-photo {
+  width: 255px;
+  height: 231px;
+}
+.card-title {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 26px;
+  margin: 20px 0;
+  padding-left: 25px;
+}
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 20px;
+}
+.card-item {
+  display: flex;
+  align-items: center;
+  width: 93px;
+  height: 18px;
+  margin-right: 24px;
+  margin-bottom: 16px;
+}
+.card-item-img {
+  width: 18px;
+  height: 18px;
+  display: block;
+  margin-right: 10px;
+}
+.card-item-value {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+
+  color: #5d6c7b;
+}
+.card-item-price-block {
+  display: flex;
+  align-items: baseline;
+}
+.card-item-price {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 29px;
+  color: #282739;
+
+  margin-right: 26px;
+  padding-left: 23px;
+}
+.card-item-price-list {
+  display: flex;
+}
+.card-item-price-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1.3px solid #eaebed;
+}
+
+.card-item-price-img {
+  width: 20px;
+  height: 20px;
+}
+.card-button {
+  margin: 0 auto;
+  margin-top: 16px;
+  margin-bottom: 20px;
+  background: #6f73ee;
+  border-radius: 5px;
+  width: 206px;
+  height: 37px;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 17px;
+  text-align: center;
+
+  /* White */
+
+  color: #ffffff;
+}

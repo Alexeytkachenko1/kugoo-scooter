@@ -1,0 +1,24 @@
+.reviews {
+    width: 100%;
+}
+
+.revitem {
+    width: 100%;
+    display: flex;
+}
+
+.revleft {
+    width: 20%;
+    display: flex;
+}
+
+.revleft img {
+    width: 100px;
+    align-self: center;
+}
+
+.revright {
+    width: 70%;
+}
+
+

@@ -1,0 +1,166 @@
+.footer {
+  background: #f4f7fb;
+}
+.footer-banner {
+  background: #6f73ee;
+}
+.footer-banner-wrapper {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+.footer-banner-header {
+  padding: 24px 0;
+  width: 445px;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+
+  /* White */
+
+  color: #ffffff;
+  margin-right: 95px;
+}
+.footer-banner-input {
+  width: 410px;
+  height: 53px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  margin-right: 20px;
+}
+.footer-banner-button {
+  width: 140px;
+  height: 53px;
+  background: #ffffff;
+  border-radius: 5px;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  text-align: center;
+
+  /* Purple */
+
+  color: #6f73ee;
+}
+.contact-title {
+  /* 12 px (regular) */
+
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 17px;
+
+  /* Black */
+
+  color: #282739;
+}
+.contact-number {
+  /* 16 px (medium) */
+
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23px;
+
+  /* Black */
+
+  color: #282739;
+}
+.contact-date {
+  /* 12 px (regular) */
+
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 17px;
+
+  /* Gray 600 */
+
+  color: #5d6c7b;
+}
+.footer-main {
+  display: flex;
+  padding-top: 46px;
+}
+.footer-info {
+  display: flex;
+}
+.footer-catalog {
+  display: flex;
+  flex-direction: column;
+  margin-right: 125px;
+}
+.footer-buyer {
+  display: flex;
+  flex-direction: column;
+
+  height: 110px;
+}
+.footer-title {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  /* identical to box height */
+
+  /* Black */
+
+  color: #282739;
+  margin-bottom: 17px;
+}
+.footer-catalog {
+  margin-right: 125px;
+}
+
+.footer-wrapper-buyer {
+  display: flex;
+}
+.footer-wrapper-buyer .footer-list {
+  margin-right: 44px;
+}
+
+.footer-info a {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+
+  /* Gray 600 */
+
+  color: #5d6c7b;
+  margin-bottom: 10px;
+}
+// .footer-list a:not(:last-child) {
+//   margin-bottom: 10px;
+// }
+.footer-contacts {
+  margin-left: 110px;
+  display: flex;
+  flex-direction: column;
+}
+.footer-contacts-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.contact-card {
+  width: 142px;
+  margin-right: 40px;
+}
+.footer-contacts-services {
+  display: flex;
+  margin-right: 40px;
+}
+.footer-contacts-shops {
+  display: flex;
+  margin-right: 50px;
+}
