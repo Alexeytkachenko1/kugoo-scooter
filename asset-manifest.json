@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/kugoo-scooter/static/css/main.c08492aa.css",
-    "main.js": "/kugoo-scooter/static/js/main.f4aba376.js",
+    "main.css": "/kugoo-scooter/static/css/main.a263fff8.css",
+    "main.js": "/kugoo-scooter/static/js/main.0d401552.js",
     "static/media/Mask Group.png": "/kugoo-scooter/static/media/Mask Group.24290bcb698af1aec9b8.png",
     "static/media/Xiaomi Mi Electric Scooter.jpeg": "/kugoo-scooter/static/media/Xiaomi Mi Electric Scooter.4997eabc900ac08fad06.jpeg",
     "static/media/shopping-cart-2 1.svg": "/kugoo-scooter/static/media/shopping-cart-2 1.db65c971c11b5c3c4194964e713bed2f.svg",
@@ -14,11 +14,11 @@
     "index.html": "/kugoo-scooter/index.html",
     "static/media/power 1.svg": "/kugoo-scooter/static/media/power 1.0f55b939939e510229c07869f743bd1d.svg",
     "static/media/catalog.svg": "/kugoo-scooter/static/media/catalog.528fe364d6c0b2320ea7d97b300b1741.svg",
-    "main.c08492aa.css.map": "/kugoo-scooter/static/css/main.c08492aa.css.map",
-    "main.f4aba376.js.map": "/kugoo-scooter/static/js/main.f4aba376.js.map"
+    "main.a263fff8.css.map": "/kugoo-scooter/static/css/main.a263fff8.css.map",
+    "main.0d401552.js.map": "/kugoo-scooter/static/js/main.0d401552.js.map"
   },
   "entrypoints": [
-    "static/css/main.c08492aa.css",
-    "static/js/main.f4aba376.js"
+    "static/css/main.a263fff8.css",
+    "static/js/main.0d401552.js"
   ]
 }
