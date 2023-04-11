@@ -2,17 +2,31 @@ import { Routes, Route } from "react-router-dom";
 import "./App.scss";
 import Header from "./Header/Header";
 import Main from "./Main/Main";
-import Product from "./Product/Product";
-
+import Product from "./Routes/Product/Product";
+import About from "./Routes/About/About";
+import Delivery from "./Routes/Delivery/Delivery";
+import TestDrive from "./Routes/TestDrive/TestDrive";
+import Blog from "./Routes/Blog/Blog";
+import Contacts from "./Routes/Contacts/Contacts";
+import Promotion from "./Routes/Promotion/Promotion";
 import Footer from "./Footer/Footer";
 
 function App(props) {
   return (
     <div className="App">
-      <Header header={props.state.header} />
+      <Header header={props.state.header} menu={props.state.menu} />
       <Routes>
         <Route path="/" element={<Main />}></Route>
-        <Route path="/product/:productId" element={<Product />} />
+        <Route
+          path="/product/:productId"
+          element={<Product scooter={props.state.scooter} />}
+        />
+        <Route path="/about-shop" element={<About />} />
+        <Route path="/delivery" element={<Delivery />} />
+        <Route path="/test-drive" element={<TestDrive />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/contacts" element={<Contacts />} />
+        <Route path="/promotion" element={<Promotion />} />
       </Routes>
       <Footer
         footer={props.state.footer}

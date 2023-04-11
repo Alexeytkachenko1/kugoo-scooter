@@ -1,0 +1,52 @@
+{
+  "scooters": [
+    {
+      "id": 1,
+      "photo": "https://content.rozetka.com.ua/goods/images/big/313272821.jpg",
+      "title": "Xiaomi Mi Electric Scooter 3Lite Black",
+      "battery": 5100,
+      "power": 250,
+      "speed": 20,
+      "reserve": 20,
+      "price": 16999,
+      "description": " Гораздо безопаснее, намного мощнее. Максимальная генерируемая мощность в 600 Вт делает поездку более простой и комфортной. Угол подъема до 16%. ",
+      "oldPrice": 18900
+    },
+    {
+      "id": 2,
+      "photo": "https://content2.rozetka.com.ua/goods/images/big/273477432.jpg",
+      "title": "Xiaomi Mi Electric Scooter 1S Black",
+      "battery": 5200,
+      "power": 300,
+      "speed": 25,
+      "reserve": 20,
+      "price": 19999,
+      "description": "Электросамокат Xiaomi Mi Scooter 1S представляет собой обновлённую версию, выпущенную через четыре года после дебюта очень популярного предшественника — Xiaomi Mi Electric Scooter. Главным изменением является новый интерактивный интерфейс на руле: на небольшом экране предоставляется информация о статусе, скорость в реальном времени и другие полезные данные. Xiaomi Mi Scooter 1S весит 12.5 кг. ",
+      "oldPrice": 20900
+    },
+    {
+      "id": 3,
+      "photo": "https://content.rozetka.com.ua/goods/images/big/266648736.jpg",
+      "title": "Xiaomi Mi Electric Scooter Pro 2 Black",
+      "battery": 5100,
+      "power": 250,
+      "speed": 20,
+      "reserve": 30,
+      "price": 18199,
+      "description": "Электросамокат Xiaomi Mi Electric Scooter Pro 2 имеет три режима скорости. Переключаться между скоростями можно быстрым двойным нажатым кнопки управления. На экране в режиме реального времени будет отображаться информация касательно выбранного режима и скорости для сохранения безопасной езды.",
+      "oldPrice": 19900
+    },
+    {
+      "id": 4,
+      "photo": "https://content2.rozetka.com.ua/goods/images/big/230867906.jpg",
+      "title": "Xiaomi Mi Pro 2 Mercedes-AMG Petronas F1 Team",
+      "battery": 7100,
+      "power": 300,
+      "speed": 25,
+      "reserve": 45,
+      "price": 47300,
+      "description": "Все любители скутеров будут в восторге от модели XIAOMI Mi Electric Scooter Pro 2 Mercedes-AMG Petronas F1 Team Edition, потому что это автомобиль для требовательных пользователей, энтузиастов двухколесных транспортных средств, а также новичков, которые только начинают свои приключения с этим типом. деятельности. Благодаря необычайной мощности двигателя (300 Вт) мы можем развивать скорость до 25 км/ч. Однако это еще не конец, потому что максимальное расстояние, пройденное с полностью заряженной батареей, составляет до 45 км. Это связано с мощным литий-ионным аккумулятором на 474 Вт·ч",
+      "oldPrice": 49900
+    }
+  ]
+}

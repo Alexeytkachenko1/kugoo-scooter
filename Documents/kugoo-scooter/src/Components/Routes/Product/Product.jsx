@@ -3,21 +3,41 @@ import { useParams } from "react-router-dom";
 import { useEffect } from "react";
 import { useState } from "react";
 
-import cart from "../../assets/img/card/shopping-cart-2 1.svg";
-import axios from "axios";
+import cart from "../../../assets/img/shopping-cart 2.svg";
+import greenpoint from "../../../assets/img/product/greenpoint.svg";
+import compare from "../../../assets/img/product/compare.svg";
+import share from "../../../assets/img/product/share 1.svg";
+import bankCard from "../../../assets/img/product/bankCard.png";
+import question from "../../../assets/img/product/QuestionCircle.svg";
+import heart from "../../../assets/img/product/heart.svg";
+import delivery from "../../../assets/img/product/delivery.svg";
+import docs from "../../../assets/img/product/docs.svg";
+import charger from "../../../assets/img/product/charger 1.svg";
+import scooter from "../../../assets/img/product/scooter 1.svg";
+import guarantee from "../../../assets/img/product/guarantee 2.svg";
 
-const Product = () => {
+// import axios from "axios";
+import myJson from "../../../data.json";
+
+const Product = (props) => {
   const [product, setProduct] = useState(false);
+
   let { productId } = useParams();
   console.log(productId);
+  let data = JSON.parse(JSON.stringify(myJson));
   useEffect(() => {
-    axios
-      .get(
-        `https://my-json-server.typicode.com/Alexeytkachenko1/my-json-server/scooters/${productId}`
-      )
-      .then((response) => {
-        setProduct(response.data);
-      });
+    // axios
+    //   .get(
+    //     `https://my-json-server.typicode.com/Alexeytkachenko1/my-json-server/scooters/${productId}`
+    //   )
+    //   .then((response) => {
+    //     setProduct(response.data);
+    //   });
+    data.scooters.map((element) => {
+      if (Number(element.id) === Number(productId)) {
+        setProduct(element);
+      }
+    });
   }, []);
   const [isProductBasket, setIsProductBasket] = useState(false);
 
@@ -45,28 +65,46 @@ const Product = () => {
           </ul>
           <ul className="product-card__instock-list">
             <li className="product-card__instock-item">
+              <img src={greenpoint} alt="" width="9px" height="9px" />
               <button className="product-card__instock-button">
                 В наличии
               </button>
             </li>
             <li className="product-card__instock-item">
+              <img src={compare} alt="" width="20px" height="20px" />
+
               <button className="product-card__instock-button">Сравнить</button>
             </li>
             <li className="product-card__instock-item">
+              <img src={share} alt="" width="20px" height="20px" />
+
               <button className="product-card__instock-button">
                 Поделиться
               </button>
             </li>
           </ul>
           <div className="product-card__price">
-            <h2 className="product-card__price-header">{product.price}₴</h2>
+            <div className="product-card__price-block">
+              <p className="product-card__price-oldprice">
+                {product.oldPrice}₴
+              </p>
+              <h2 className="product-card__price-header">{product.price}₴</h2>
+            </div>
+
             <button className="product-card__price-button">
-              <span className="product-card__price-span">Рассрочка:</span>1416
-              грн в месяц/12 месяцев
+              <img src={bankCard} alt="" />
+              <div className="product-card__price-wrapper">
+                <span className="product-card__price-span">Рассрочка:</span>
+                <span className="product-card__price-button-title"></span>
+                1416 грн в месяц/12 месяцев
+              </div>
             </button>
           </div>
           <div className="product-card__equipment">
-            <h2 className="product-card__equipment-header">Комплектация</h2>
+            <div className="product-card-question-block">
+              <h2 className="product-card__equipment-header">Комплектация</h2>
+              <img src={question} alt="" />
+            </div>
             <ul className="product-card__equipment-list">
               <li className="product-card__equipment-item">
                 <button className="product-card__equipment-button">
@@ -129,12 +167,18 @@ const Product = () => {
           </div>
           <div className="product-card__buy">
             <div className="product-card__buy-wrapper">
-              <h2 className="product-card__buy-header">{product.price}₴</h2>
-              <button className="product-card__buy-svg-heart"></button>
+              <h2 className="product-card__buy-header">{product.price} ₴</h2>
+              <button className="product-card__buy-svg-heart">
+                <img src={heart} alt="" />
+              </button>
             </div>
-            <p className="product-card__buy-delivery">
-              Бесплатная доставка по Украине от 1 дня при заказе до 01.09
-            </p>
+            <div className="product-card__buy-delivery-block">
+              <img src={delivery} alt="" />
+              <p className="product-card__buy-delivery">
+                Бесплатная доставка по Украине от 1 дня при заказе до 01.09
+              </p>
+            </div>
+
             <ul className="product-card__buy-list">
               <li className="product-card__buy-item">
                 <button className="product-card__buy-button-buy">
@@ -180,6 +224,7 @@ const Product = () => {
             <button className="product-about__button">Версия MAX</button>
           </li>
         </ul>
+        <span className="product-about__before"></span>
         <div className="product-about__about-wrapper">
           <div className="product-about__about">
             <h2 className="product-about__about-header">{product.title}</h2>
@@ -191,51 +236,73 @@ const Product = () => {
             <h2 className="product-about__equipment-header">Что в комплекте</h2>
             <ul className="product-about__equipment-list">
               <li className="product-about__equipment-item">
-                <p className="product-about__equipment-text">Инструкция</p>
-                <button className="product-about__equipment-button">
-                  Посмотреть
-                </button>
+                <img
+                  className="product-about__equipment-item-img"
+                  src={docs}
+                  alt=""
+                />
+                <div className="product-about__equipment-item-wrapper">
+                  <p className="product-about__equipment-text">Инструкция</p>
+                  <button className="product-about__equipment-button">
+                    Посмотреть
+                  </button>
+                </div>
               </li>
               <li className="product-about__equipment-item">
+                <img
+                  className="product-about__equipment-item-img"
+                  src={charger}
+                  alt=""
+                />
                 <p className="product-about__equipment-text">
                   Зарядное устройство
                 </p>
               </li>
               <li className="product-about__equipment-item">
+                <img
+                  className="product-about__equipment-item-img"
+                  src={scooter}
+                  alt=""
+                />
                 <p className="product-about__equipment-text">Чехол</p>
               </li>
               <li className="product-about__equipment-item">
+                <img
+                  className="product-about__equipment-item-img"
+                  src={guarantee}
+                  alt=""
+                />
                 <p className="product-about__equipment-text">
                   Гарантийный талон
                 </p>
               </li>
             </ul>
+            <h2 className="product-about__peculiarities">
+              Ключевые особенности Kugoo Kirin M4
+            </h2>
+            <ul className="product-about__peculiarities-list">
+              <li className="product-about__peculiarities-item">
+                <button className="product-about__peculiarities-button">
+                  Для города
+                </button>
+              </li>
+              <li className="product-about__peculiarities-item">
+                <button className="product-about__peculiarities-button">
+                  Быстрый
+                </button>
+              </li>
+              <li className="product-about__peculiarities-item">
+                <button className="product-about__peculiarities-button">
+                  Комфортный
+                </button>
+              </li>
+              <li className="product-about__peculiarities-item">
+                <button className="product-about__peculiarities-button">
+                  Легкий
+                </button>
+              </li>
+            </ul>
           </div>
-          <h2 className="product-about__peculiarities">
-            Ключевые особенности Kugoo Kirin M4
-          </h2>
-          <ul className="product-about__peculiarities-list">
-            <li className="product-about__peculiarities-item">
-              <button className="product-about__peculiarities-button">
-                Для города
-              </button>
-            </li>
-            <li className="product-about__peculiarities-item">
-              <button className="product-about__peculiarities-button">
-                Быстрый
-              </button>
-            </li>
-            <li className="product-about__peculiarities-item">
-              <button className="product-about__peculiarities-button">
-                Комфортный
-              </button>
-            </li>
-            <li className="product-about__peculiarities-item">
-              <button className="product-about__peculiarities-button">
-                Легкий
-              </button>
-            </li>
-          </ul>
         </div>
       </section>
 
