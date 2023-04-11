@@ -1,24 +1,38 @@
 {
   "files": {
-    "main.css": "/kugoo-scooter/static/css/main.a263fff8.css",
-    "main.js": "/kugoo-scooter/static/js/main.0d401552.js",
+    "main.css": "/kugoo-scooter/static/css/main.c8816420.css",
+    "main.js": "/kugoo-scooter/static/js/main.85606435.js",
     "static/media/Mask Group.png": "/kugoo-scooter/static/media/Mask Group.24290bcb698af1aec9b8.png",
-    "static/media/Xiaomi Mi Electric Scooter.jpeg": "/kugoo-scooter/static/media/Xiaomi Mi Electric Scooter.4997eabc900ac08fad06.jpeg",
+    "static/media/compare.svg": "/kugoo-scooter/static/media/compare.e3d6f793c405d033e22d3081d58620dc.svg",
     "static/media/shopping-cart-2 1.svg": "/kugoo-scooter/static/media/shopping-cart-2 1.db65c971c11b5c3c4194964e713bed2f.svg",
     "static/media/Kugoo.svg": "/kugoo-scooter/static/media/Kugoo.ba4031e81d859b30b87b.svg",
+    "static/media/vacuum-cleaner.svg": "/kugoo-scooter/static/media/vacuum-cleaner.df7f3e121038aaac59365568c5c0a304.svg",
+    "static/media/bike.svg": "/kugoo-scooter/static/media/bike.7cf192fe9576c6c3ab7585de9943730e.svg",
+    "static/media/delivery.svg": "/kugoo-scooter/static/media/delivery.6e48219063548e7de2ae7cddf657ebbf.svg",
+    "static/media/docs.svg": "/kugoo-scooter/static/media/docs.129e561deb4cbdb3cbb9ab94cafa086a.svg",
     "static/media/shopping-cart 2.svg": "/kugoo-scooter/static/media/shopping-cart 2.140b163c4612429f5c3cbc8c59dc7d71.svg",
     "static/media/speedometer 1.svg": "/kugoo-scooter/static/media/speedometer 1.ab7e7d89129efe100152627941b3656e.svg",
+    "static/media/samocat.svg": "/kugoo-scooter/static/media/samocat.7c30fbad451b2ee9664299ebe38e5e1b.svg",
     "static/media/timer 1.svg": "/kugoo-scooter/static/media/timer 1.fef04f80f3d641b7f9ed53a44eaf31b4.svg",
+    "static/media/share 1.svg": "/kugoo-scooter/static/media/share 1.7fe359c83e713d6d00a15ff725aa834b.svg",
+    "static/media/QuestionCircle.svg": "/kugoo-scooter/static/media/QuestionCircle.2cf042732c394e61d11a5009228efd1c.svg",
+    "static/media/heart.svg": "/kugoo-scooter/static/media/heart.ed110d25ebe4d511b16e666e0a22eef4.svg",
     "static/media/Heart.svg": "/kugoo-scooter/static/media/Heart.e25158528ef501306836ee74d0bec87b.svg",
+    "static/media/scooter 1.svg": "/kugoo-scooter/static/media/scooter 1.1abee727f0dbdfc1e312db4e14891add.svg",
     "static/media/accumulator 1.svg": "/kugoo-scooter/static/media/accumulator 1.70ed10aa7bbb2ac33e5fda505d1ec7a1.svg",
+    "static/media/weighing-scale.svg": "/kugoo-scooter/static/media/weighing-scale.55fa0537403aeca4c7ad137f3554087e.svg",
+    "static/media/charger 1.svg": "/kugoo-scooter/static/media/charger 1.769a781fe12dfe2225a54ae484630e47.svg",
+    "static/media/scooter.svg": "/kugoo-scooter/static/media/scooter.2dd406076e9606e14971f30e3a641c34.svg",
+    "static/media/guarantee 2.svg": "/kugoo-scooter/static/media/guarantee 2.8c5593548c02713cc181723ccafaca7d.svg",
     "index.html": "/kugoo-scooter/index.html",
     "static/media/power 1.svg": "/kugoo-scooter/static/media/power 1.0f55b939939e510229c07869f743bd1d.svg",
     "static/media/catalog.svg": "/kugoo-scooter/static/media/catalog.528fe364d6c0b2320ea7d97b300b1741.svg",
-    "main.a263fff8.css.map": "/kugoo-scooter/static/css/main.a263fff8.css.map",
-    "main.0d401552.js.map": "/kugoo-scooter/static/js/main.0d401552.js.map"
+    "static/media/greenpoint.svg": "/kugoo-scooter/static/media/greenpoint.68ce163f9f7514f49fc1e40bfb650329.svg",
+    "main.c8816420.css.map": "/kugoo-scooter/static/css/main.c8816420.css.map",
+    "main.85606435.js.map": "/kugoo-scooter/static/js/main.85606435.js.map"
   },
   "entrypoints": [
-    "static/css/main.a263fff8.css",
-    "static/js/main.0d401552.js"
+    "static/css/main.c8816420.css",
+    "static/js/main.85606435.js"
   ]
 }
