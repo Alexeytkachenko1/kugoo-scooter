@@ -1,22 +1,61 @@
-.menu {
+// .menu {
+//
+// }
+// .menu.active {
+//   transform: translateX(0);
+// } /*# sourceMappingURL=Menu.css.map */
+
+* {
+  box-sizing: border-box;
+}
+.modal {
   position: fixed;
   top: 150px;
   left: 100px;
   width: 652px;
   // height: 242px;
-  transform: translateX(-150%);
+
   transition: 1s;
   border-radius: 12px;
-  background-color: red;
+  background-color: #fff;
   z-index: 50;
   display: flex;
 }
+
+.modal__content {
+  padding: 1rem 0.5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 10;
+}
+
 .menu-wrapper {
   display: flex;
 
   padding-left: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+.menu-wrapper-item:not:last-child {
+  margin-bottom: 15px;
+}
+.menu-wrapper:hover {
+  color: #6f73ee;
+}
+.menu-categories {
+  // display: flex;
+  margin-right: 43px;
 }
 
 .menu a {
@@ -41,7 +80,7 @@
 
   color: #282739;
 }
-.menu-list .menu-wrapper:not(:last-child) {
+.menu-list li:not(:last-child) {
   margin-bottom: 15px;
 }
 .menu-link-svg {
@@ -49,15 +88,56 @@
   width: 20px;
   height: 20px;
   fill: black;
+  border: none;
+  background-color: transparent;
 }
-
-.menu-wrapper a:hover {
+.menu-link:hover {
   color: #6f73ee;
 }
-.menu-link-svg:hover {
-  fill: #6f73ee;
+.peculiarities:not(:last-child) {
+  margin-right: 60px;
+}
+.peculiarities-header {
+  padding-top: 30px;
+  margin-bottom: 15px;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23px;
+
+  /* Black */
+
+  color: #282739;
+}
+.peculiarities-list li {
+  margin-bottom: 10px;
+}
+.peculiarities-list a {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+
+  /* Gray 600 */
+
+  color: #5d6c7b;
+}
+.peculiarities-list a:hover {
+  color: #6f73ee;
 }
 
-.menu.active {
-  transform: translateX(0);
-} /*# sourceMappingURL=Menu.css.map */
+// .menu-link-svg {
+//   .menu-wrapper .menu-link:hover .menu-link-svg {
+//     fill: #6f73ee;
+//   }
+// }
+
+// &__icon-envelope-svg {
+//   margin-right: 10px;
+//   .address__link:hover &,
+//   .address__link:focus & {
+//     fill: $accent-color;
+//   }
+// }

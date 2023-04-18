@@ -4,7 +4,7 @@ import Scooters from "./Scooters/Scooters";
 
 const Main = () => {
   return (
-    <main>
+    <main className="container">
       <Hero />
       <Scooters />
     </main>

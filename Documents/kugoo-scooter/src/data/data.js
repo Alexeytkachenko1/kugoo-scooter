@@ -1,9 +1,10 @@
 // import XiaomiMiElectricScooter from "../assets/img/scooters/Xiaomi Mi Electric Scooter.jpeg";
-import samocat from "../assets/img/menu/samocat.svg";
-import scooter from "../assets/img/menu/scooter.svg";
-import bike from "../assets/img/menu/bike.svg";
-import vacuum from "../assets/img/menu/vacuum-cleaner.svg";
-import weight from "../assets/img/menu/weighing-scale.svg";
+import Samocat from "../assets/img/menu/Samocat";
+
+import Weight from "../assets/img/menu/Weighing-scale";
+import Scooter from "../assets/img/menu/Scooter";
+import Bike from "../assets/img/menu/Bike";
+import Vacuum from "../assets/img/menu/Vacuum-cleaner";
 
 let state = {
   header: {
@@ -24,11 +25,11 @@ let state = {
       // { name: "Сервис", address: "" },
       // { name: "Сотрудничество", address: "" },
       // { name: "Заказать звонок", address: "" },
-      { img: `${samocat}`, name: "Электросамокаты", address: "/" },
-      { img: `${scooter}`, name: "Электроскутеры", address: "/delivery" },
-      { img: `${bike}`, name: "Электровелосипеды", address: "/test-drive" },
-      { img: `${vacuum}`, name: "Робот-пылесосы", address: "/blog" },
-      { img: `${weight}`, name: "Весы", address: "/contacts" },
+      { img: <Samocat />, name: "Электросамокаты", address: "/" },
+      { img: <Scooter />, name: "Электроскутеры", address: "/delivery" },
+      { img: <Bike />, name: "Электровелосипеды", address: "/test-drive" },
+      { img: <Vacuum />, name: "Робот-пылесосы", address: "/blog" },
+      { img: <Weight />, name: "Весы", address: "/contacts" },
     ],
     peculiarities: [
       { name: "Внедорожный", address: "/about-shop" },

@@ -5,10 +5,21 @@ import basket from "../../assets/img/shopping-cart 2.svg";
 import search from "../../assets/img/search.png";
 import { useState } from "react";
 import { Routes } from "react-router-dom";
-import Menu from "./Menu/Menu";
+import App from "./Menu/Menu";
 
 const Link = (props) => {
-  return <NavLink to={props.link.address}>{props.link.name}</NavLink>;
+  return (
+    <NavLink
+      style={({ isActive }) => {
+        return {
+          color: isActive ? "#ff0000" : "",
+        };
+      }}
+      to={props.link.address}
+    >
+      {props.link.name}
+    </NavLink>
+  );
 };
 
 // const addProductToBasket = () => {
@@ -18,11 +29,13 @@ const Link = (props) => {
 const Header = (props) => {
   const [menuActive, setMenuActive] = useState(false);
 
-  let headerLinks = props.header.links.map((link) => <Link link={link} />);
+  let headerLinks = props.header.links.map((link) => (
+    <Link link={link} key={link.name} />
+  ));
   return (
     <header className="container">
       <div className="header-main">
-        <a className="header-logo" href="//kugoo-scooter">
+        <a className="header-logo" href="/kugoo-scooter">
           {" "}
         </a>
         <button
@@ -32,7 +45,11 @@ const Header = (props) => {
           <img className=" header-catalog-svg" src={catalog} alt="catalog" />
           <span className="header-catalog-span">Каталог</span>
         </button>
-        <Menu menu={props.menu} active={menuActive} setActive={setMenuActive} />
+        <App
+          menu={props.menu}
+          open={menuActive}
+          closeModal={() => setMenuActive(false)}
+        />
 
         <img className="header-search" src={search} alt="" width="603px" />
         {/* <NavLink to="/account" className="user-account-link">Account</NavLink>

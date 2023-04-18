@@ -16,10 +16,21 @@ import { useState } from "react";
 import { useEffect } from "react";
 import myJson from "../../../data.json";
 import Card from "./Card/Card";
+import { useSelector } from "react-redux";
+import { createSelector } from "reselect";
 
 const Scooters = () => {
   const navigate = useNavigate();
-
+  const scootersData = createSelector(
+    (state) => state.scooters,
+    (scooters) => {
+      return {
+        scooters,
+      };
+    }
+  );
+  const data = useSelector(scootersData);
+  console.log(data);
   let [products, setProducts] = useState([]);
   useEffect(() => {
     // axios
@@ -32,11 +43,13 @@ const Scooters = () => {
     let data = JSON.parse(JSON.stringify(myJson));
     setProducts(data.scooters);
   }, []);
-  const showMoreHandler = (productId) => {
-    navigate(`product/${productId}`);
-  };
+  // const showMoreHandler = (productId) => {
+  //   navigate(`product/${productId}`);
+  // };
 
-  let cards = products.map((product) => <Card product={product} />);
+  const cards = products.map((product) => (
+    <Card {...product} key={product.id} />
+  ));
 
   return (
     <section className="scooters container">

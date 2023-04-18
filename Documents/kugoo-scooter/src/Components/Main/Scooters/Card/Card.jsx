@@ -17,30 +17,30 @@ const Card = (props) => {
     <div className="card-wrapper">
       <img
         className="card-photo"
-        src={props.product.photo}
-        alt={`img_scooters${props.product.id}`}
+        src={props.photo}
+        alt={`img_scooters${props.id}`}
       />
-      <h2 className="card-title">{props.product.title}</h2>
+      <h2 className="card-title">{props.title}</h2>
       <ul className="card-list">
         <li className="card-item">
           <img className="card-item-img" src={battery} alt="" />
-          <p className="card-item-value">{props.product.battery} mAh</p>
+          <p className="card-item-value">{props.battery} mAh</p>
         </li>
         <li className="card-item">
           <img className="card-item-img" src={power} alt="" />
-          <p className="card-item-value">{props.product.power} Вт</p>
+          <p className="card-item-value">{props.power} Вт</p>
         </li>
         <li className="card-item">
           <img className="card-item-img" src={speed} alt="" />
-          <p className="card-item-value">{props.product.speed} км/ч</p>
+          <p className="card-item-value">{props.speed} км/ч</p>
         </li>
         <li className="card-item">
           <img className="card-item-img" src={reserve} alt="" />
-          <p className="card-item-value">{props.product.reserve} км</p>
+          <p className="card-item-value">{props.reserve} км</p>
         </li>
       </ul>
       <div className="card-item-price-block">
-        <h3 className="card-item-price">{props.product.price}₴</h3>
+        <h3 className="card-item-price">{props.price}₴</h3>
         <ul className="card-item-price-list">
           <li className="card-item-price-item">
             <img className="card-item-price-img" src={cart} alt="" />
@@ -53,7 +53,7 @@ const Card = (props) => {
 
       <button
         onClick={() => {
-          showMoreHandler(props.product.id);
+          showMoreHandler(props.id);
         }}
         className="card-button"
       >
