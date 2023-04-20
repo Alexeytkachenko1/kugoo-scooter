@@ -1,7 +1,20 @@
 {
   "files": {
-    "main.css": "/kugoo-scooter/static/css/main.0b5a9c97.css",
-    "main.js": "/kugoo-scooter/static/js/main.108e1315.js",
+    "main.css": "/kugoo-scooter/static/css/main.ac4f0f24.css",
+    "main.js": "/kugoo-scooter/static/js/main.f9ca4fc4.js",
+    "static/media/about-banner.png": "/kugoo-scooter/static/media/about-banner.83c585c73e85a9aaebd6.png",
+    "static/media/testDriveSect.png": "/kugoo-scooter/static/media/testDriveSect.9de4ea14827cc99c24c9.png",
+    "static/media/sell-out.png": "/kugoo-scooter/static/media/sell-out.59f4cfc1d6fa933a98d4.png",
+    "static/media/catalog-scooters.png": "/kugoo-scooter/static/media/catalog-scooters.73510a807972436bc994.png",
+    "static/media/catakog-banner.png": "/kugoo-scooter/static/media/catakog-banner.3061470e0af010a1f73e.png",
+    "static/media/blog.png": "/kugoo-scooter/static/media/blog.4c629e1b3fb3bd11ec2c.png",
+    "static/media/deliverySec.png": "/kugoo-scooter/static/media/deliverySec.d1d53d58b0933ee9aa4a.png",
+    "static/media/catalogScootersBanner.png": "/kugoo-scooter/static/media/catalogScootersBanner.d3a9d6023710f73f0dca.png",
+    "static/media/contacts.png": "/kugoo-scooter/static/media/contacts.9ca89b03934444944131.png",
+    "static/media/catalog-bikes.png": "/kugoo-scooter/static/media/catalog-bikes.d36f180873fa77eff217.png",
+    "static/media/catalog-vacuum.png": "/kugoo-scooter/static/media/catalog-vacuum.97241450641aa5afc4ec.png",
+    "static/media/catalog-weight.png": "/kugoo-scooter/static/media/catalog-weight.b555b091f57d8c25fee9.png",
+    "static/media/diplom.png": "/kugoo-scooter/static/media/diplom.e716cac7db1cc20f1357.png",
     "static/media/compare.svg": "/kugoo-scooter/static/media/compare.e3d6f793c405d033e22d3081d58620dc.svg",
     "static/media/shopping-cart-2 1.svg": "/kugoo-scooter/static/media/shopping-cart-2 1.db65c971c11b5c3c4194964e713bed2f.svg",
     "static/media/Kugoo.svg": "/kugoo-scooter/static/media/Kugoo.ba4031e81d859b30b87b.svg",
@@ -17,16 +30,18 @@
     "static/media/scooter 1.svg": "/kugoo-scooter/static/media/scooter 1.1abee727f0dbdfc1e312db4e14891add.svg",
     "static/media/accumulator 1.svg": "/kugoo-scooter/static/media/accumulator 1.70ed10aa7bbb2ac33e5fda505d1ec7a1.svg",
     "static/media/charger 1.svg": "/kugoo-scooter/static/media/charger 1.769a781fe12dfe2225a54ae484630e47.svg",
+    "static/media/CheckCircle.svg": "/kugoo-scooter/static/media/CheckCircle.08d53ecd9f67ad2908b63cb166491ab9.svg",
+    "static/media/confirm.svg": "/kugoo-scooter/static/media/confirm.4c233f9551a9f1fe49d633ea0d08a1bd.svg",
     "index.html": "/kugoo-scooter/index.html",
     "static/media/guarantee 2.svg": "/kugoo-scooter/static/media/guarantee 2.8c5593548c02713cc181723ccafaca7d.svg",
     "static/media/power 1.svg": "/kugoo-scooter/static/media/power 1.0f55b939939e510229c07869f743bd1d.svg",
     "static/media/catalog.svg": "/kugoo-scooter/static/media/catalog.528fe364d6c0b2320ea7d97b300b1741.svg",
     "static/media/greenpoint.svg": "/kugoo-scooter/static/media/greenpoint.68ce163f9f7514f49fc1e40bfb650329.svg",
-    "main.0b5a9c97.css.map": "/kugoo-scooter/static/css/main.0b5a9c97.css.map",
-    "main.108e1315.js.map": "/kugoo-scooter/static/js/main.108e1315.js.map"
+    "main.ac4f0f24.css.map": "/kugoo-scooter/static/css/main.ac4f0f24.css.map",
+    "main.f9ca4fc4.js.map": "/kugoo-scooter/static/js/main.f9ca4fc4.js.map"
   },
   "entrypoints": [
-    "static/css/main.0b5a9c97.css",
-    "static/js/main.108e1315.js"
+    "static/css/main.ac4f0f24.css",
+    "static/js/main.f9ca4fc4.js"
   ]
 }
