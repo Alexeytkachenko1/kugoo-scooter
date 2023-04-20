@@ -1,5 +1,3 @@
-import state from "../data/data";
-
 const initialState = {
   name: "",
   password: "",

@@ -1,15 +1,20 @@
 .product {
-  //   display: flex;
+  // display: flex;
 }
 
 .product-card {
   display: flex;
 }
-.product--card-photo {
+.product-card-swiper {
   width: 570px;
   height: 506px;
   margin-right: 64px;
   margin-top: 77px;
+}
+.product-img {
+  object-fit: contain;
+  width: 100%;
+  max-height: 506px;
 }
 // =======product-right=======
 
@@ -419,6 +424,7 @@
   margin-right: 20px;
 }
 .product-card__buy-button-buy {
+  cursor: pointer;
   font-family: "Jost";
   font-style: normal;
   font-weight: 400;
@@ -438,6 +444,7 @@
   border-radius: 5px;
 }
 .product-card__buy-button-cart {
+  cursor: pointer;
   width: 197px;
   height: 53px;
 

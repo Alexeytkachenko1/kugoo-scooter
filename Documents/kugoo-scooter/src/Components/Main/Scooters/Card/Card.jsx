@@ -6,20 +6,23 @@ import reserve from "../../../../assets/img/card/timer 1.svg";
 import cart from "../../../../assets/img/card/shopping-cart-2 1.svg";
 import favorites from "../../../../assets/img/card/Heart.svg";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Card = (props) => {
   const navigate = useNavigate();
 
-  const showMoreHandler = (productId) => {
-    navigate(`product/${productId}`);
-  };
+  // const showMoreHandler = (productId) => {
+  //   navigate(`product/${productId}`);
+  // };
   return (
     <div className="card-wrapper">
-      <img
-        className="card-photo"
-        src={props.photo}
-        alt={`img_scooters${props.id}`}
-      />
+      <div className="card-wrapper-photo">
+        <Link to={`/product/${props.id}`}>
+          <img className="card-photo" src={props.photo[0]} alt={props.title} />
+        </Link>
+        {/* <Link to={`/product/${props.id}`}> Подробнее </Link> */}
+      </div>
+
       <h2 className="card-title">{props.title}</h2>
       <ul className="card-list">
         <li className="card-item">
@@ -52,13 +55,14 @@ const Card = (props) => {
       </div>
 
       <button
-        onClick={() => {
-          showMoreHandler(props.id);
-        }}
+        // onClick={() => {
+        //   showMoreHandler(props.id);
+        // }}
         className="card-button"
       >
-        Купить в 1 клик
+        <Link to={`/product/${props.id}`}> Подробнее </Link>
       </button>
+      {console.log(props.id)}
     </div>
   );
 };

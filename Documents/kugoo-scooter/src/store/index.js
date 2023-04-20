@@ -2,6 +2,7 @@ import { createStore, combineReducers, compose, applyMiddleware } from "redux";
 import ReduxThunk from "redux-thunk";
 import scooters from "../reducer/scooters";
 import user from "../reducer/user";
+import basket from "../reducer/basket";
 
 const stringMiddleware = () => (next) => (action) => {
   if (typeof action === "string") {
@@ -12,7 +13,7 @@ const stringMiddleware = () => (next) => (action) => {
   return next(action);
 };
 const store = createStore(
-  combineReducers({ scooters, user }),
+  combineReducers({ scooters, user, basket }),
   compose(
     applyMiddleware(ReduxThunk, stringMiddleware),
     (window.__REDUX_DEVTOOLS_EXTENSION__ &&

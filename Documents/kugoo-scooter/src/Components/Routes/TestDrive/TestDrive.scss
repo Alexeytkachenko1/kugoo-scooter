@@ -1,0 +1,58 @@
+.blog {
+  position: relative;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.blog-img {
+  display: block;
+}
+.blog-header-test {
+  width: 612px;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 51px;
+  /* identical to box height */
+
+  text-transform: uppercase;
+
+  /* White */
+
+  color: #ffffff;
+
+  position: absolute;
+  top: 75px;
+  left: 133px;
+}
+.testDrive-wrapper-test {
+  position: absolute;
+  top: 258px;
+  left: 137px;
+  display: flex;
+}
+.testDrive-button {
+  margin-right: 35px;
+  // cursor: pointer;
+  display: flex;
+  align-items: center;
+  width: 200px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: left;
+  /* or 129% */
+
+  /* White */
+
+  color: #ffffff;
+}
+.testDrive-button-img {
+  margin-right: 15px;
+}

@@ -2,6 +2,16 @@ import "./Product.scss";
 import { useParams } from "react-router-dom";
 import { useEffect } from "react";
 import { useState } from "react";
+import { useDispatch } from "react-redux";
+import { additem } from "../../../actions";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination } from "swiper";
+
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import Spinner from "../../../Components/Main/Spinner";
+import { NavLink } from "react-router-dom";
 
 import cart from "../../../assets/img/shopping-cart 2.svg";
 import greenpoint from "../../../assets/img/product/greenpoint.svg";
@@ -15,43 +25,97 @@ import docs from "../../../assets/img/product/docs.svg";
 import charger from "../../../assets/img/product/charger 1.svg";
 import scooter from "../../../assets/img/product/scooter 1.svg";
 import guarantee from "../../../assets/img/product/guarantee 2.svg";
+import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 
 // import axios from "axios";
-import myJson from "../../../data.json";
+// import myJson from "../../../data.json";
+import { db } from "../../../firebase/firebase";
+import { doc, getDoc } from "firebase/firestore";
 
 const Product = (props) => {
-  const [product, setProduct] = useState(false);
+  // const [product, setProduct] = useState(false);
+  const [data, setData] = useState([]);
+  const [add, setAdd] = useState(false);
+  useEffect(() => {
+    let timer;
+    if (add) {
+      timer = setInterval(() => setAdd(false), 1000);
+    }
+    return () => clearInterval(timer);
+  }, [add]);
+  console.log(data);
+  // const [error, setError] = useState(false);
+
+  useEffect(() => {
+    const scooterRef = doc(db, "catalog-scooters", productId);
+    getDoc(scooterRef).then((item) => setData(item.data()));
+  }, []);
+  const dispatch = useDispatch();
+  // const addItemToCart = (id) => {
+  //   const item = data.find((item) => (item.id = id));
+  //   console.log(item);
+  // };
 
   let { productId } = useParams();
   console.log(productId);
-  let data = JSON.parse(JSON.stringify(myJson));
-  useEffect(() => {
-    // axios
-    //   .get(
-    //     `https://my-json-server.typicode.com/Alexeytkachenko1/my-json-server/scooters/${productId}`
-    //   )
-    //   .then((response) => {
-    //     setProduct(response.data);
-    //   });
-    data.scooters.map((element) => {
-      if (Number(element.id) === Number(productId)) {
-        setProduct(element);
-      }
-    });
-  }, []);
+  // let data = JSON.parse(JSON.stringify(myJson));
+  // useEffect(() => {
+  //   // axios
+  //   //   .get(
+  //   //     `https://my-json-server.typicode.com/Alexeytkachenko1/my-json-server/scooters/${productId}`
+  //   //   )
+  //   //   .then((response) => {
+  //   //     setProduct(response.data);
+  //   //   });
+  //   data.scooters.map((element) => {
+  //     if (Number(element.id) === Number(productId)) {
+  //       setProduct(element);
+  //     }
+  //   });
+  // }, []);
   const [isProductBasket, setIsProductBasket] = useState(false);
 
   const addProductToBasket = () => {
-    alert(`${product.title} добавлен в корзину`);
+    alert(`${data.title} добавлен в корзину`);
     setIsProductBasket(true);
   };
 
   return (
     <div className="product container">
       <div className="product-card">
-        <img className="product--card-photo" src={product.photo} alt="" />
+        <div className="product-card-swiper">
+          {data.length === 0 && <Spinner />}
+          {data.length !== 0 && (
+            <Swiper
+              slidesPerView={1}
+              spaceBetween={30}
+              loop={true}
+              pagination={{
+                clickable: true,
+              }}
+              navigation={true}
+              modules={[Pagination, Navigation]}
+              className="mySwiper"
+            >
+              {data.photo.map((slider, index) => {
+                return (
+                  <SwiperSlide>
+                    <img
+                      className="product-img"
+                      src={slider}
+                      alt={`img_slider_${slider.id}`}
+                    />
+                  </SwiperSlide>
+                );
+              })}
+            </Swiper>
+          )}
+        </div>
+        {/* {data.photo.map((el) => (
+          <img className="product--card-photo" src={...el} key={el.id} alt="" />
+        ))} */}
         <div className="product-right">
-          <h2 className="product-card-header">{product.title}</h2>
+          <h2 className="product-card-header">{data.title}</h2>
           <ul className="product-card-statistic-list">
             <li className="product-card-statistic-item">
               <p className="product-card-statistic">Просмотров 350</p>
@@ -85,10 +149,8 @@ const Product = (props) => {
           </ul>
           <div className="product-card__price">
             <div className="product-card__price-block">
-              <p className="product-card__price-oldprice">
-                {product.oldPrice}₴
-              </p>
-              <h2 className="product-card__price-header">{product.price}₴</h2>
+              <p className="product-card__price-oldprice">{data.oldPrice}₴</p>
+              <h2 className="product-card__price-header">{data.price}₴</h2>
             </div>
 
             <button className="product-card__price-button">
@@ -167,7 +229,7 @@ const Product = (props) => {
           </div>
           <div className="product-card__buy">
             <div className="product-card__buy-wrapper">
-              <h2 className="product-card__buy-header">{product.price} ₴</h2>
+              <h2 className="product-card__buy-header">{data.price} ₴</h2>
               <button className="product-card__buy-svg-heart">
                 <img src={heart} alt="" />
               </button>
@@ -186,21 +248,12 @@ const Product = (props) => {
                 </button>
               </li>
               <li className="product-card__buy-item">
-                {isProductBasket ? (
-                  <button
-                    className="product-card__buy-button-cart"
-                    onClick={addProductToBasket}
-                  >
-                    уже в корзине
-                  </button>
-                ) : (
-                  <button
-                    className="product-card__buy-button-cart"
-                    onClick={addProductToBasket}
-                  >
-                    добавить в корзину
-                  </button>
-                )}
+                <button
+                  className="product-card__buy-button-cart"
+                  onClick={() => dispatch(additem(data)) && setAdd(true)}
+                >
+                  {add ? <AddShoppingCartIcon /> : "Добавить в корзину"}
+                </button>
               </li>
             </ul>
           </div>
@@ -227,9 +280,9 @@ const Product = (props) => {
         <span className="product-about__before"></span>
         <div className="product-about__about-wrapper">
           <div className="product-about__about">
-            <h2 className="product-about__about-header">{product.title}</h2>
+            <h2 className="product-about__about-header">{data.title}</h2>
             <p className="product-about__about-description">
-              {product.description}
+              {data.description}
             </p>
           </div>
           <div className="product-about__equipment">

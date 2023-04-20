@@ -2,11 +2,45 @@
   position: relative;
   margin-top: 30px;
 }
-.hero-wrapper {
+.wrapper-0 {
   position: absolute;
   top: 102px;
   left: 135px;
 }
+.wrapper-1 {
+  position: absolute;
+  top: 180px;
+  right: 95px;
+}
+.wrapper-2 {
+  position: absolute;
+  top: 102px;
+  left: 135px;
+}
+.wrapper-0 {
+  .hero-button {
+    margin-top: 20px;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    text-align: center;
+
+    /* Purple */
+
+    color: #6f73ee;
+    width: 159px;
+    height: 53px;
+
+    background: #ffffff;
+    /* White */
+
+    border: 1.3px solid #ffffff;
+    border-radius: 5px;
+  }
+}
+
 .hero-header {
   width: 615px;
   font-family: "Jost";

@@ -1,0 +1,27 @@
+.blog {
+  position: relative;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.blog-img {
+  display: block;
+}
+.blog-header {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 51px;
+  /* identical to box height */
+
+  text-transform: uppercase;
+
+  /* White */
+
+  color: #ffffff;
+
+  position: absolute;
+  top: 75px;
+  left: 133px;
+}

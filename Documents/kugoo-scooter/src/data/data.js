@@ -25,7 +25,12 @@ let state = {
       // { name: "Сервис", address: "" },
       // { name: "Сотрудничество", address: "" },
       // { name: "Заказать звонок", address: "" },
-      { img: <Samocat />, name: "Электросамокаты", address: "/" },
+      // <NavLink to="/catalog">Catalog</NavLink>
+      {
+        img: <Samocat />,
+        name: "Электросамокаты",
+        address: "/catalog/scooters",
+      },
       { img: <Scooter />, name: "Электроскутеры", address: "/delivery" },
       { img: <Bike />, name: "Электровелосипеды", address: "/test-drive" },
       { img: <Vacuum />, name: "Робот-пылесосы", address: "/blog" },

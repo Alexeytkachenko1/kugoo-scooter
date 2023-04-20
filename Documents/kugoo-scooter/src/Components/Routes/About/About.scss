@@ -1,4 +1,153 @@
-p {
-  // background-color: red;
-  // height: 200px;
+.about {
+  margin-top: 57px;
+  margin-bottom: 100px;
+}
+
+.about-hero {
+  position: relative;
+}
+.about-hero-img {
+}
+.about-hero-header {
+  width: 493px;
+
+  position: absolute;
+
+  top: 94px;
+  left: 136px;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 51px;
+  text-transform: uppercase;
+
+  /* White */
+
+  color: #ffffff;
+}
+.about-hero-list {
+  display: flex;
+  position: absolute;
+  top: 280px;
+  left: 135px;
+  margin-bottom: 80px;
+}
+.about-hero-item:not(:last-child) {
+  margin-right: 43px;
+}
+.about-hero-item-title {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+
+  /* White */
+
+  color: #ffffff;
+}
+.about-hero-item-desc {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 36px;
+  text-transform: uppercase;
+
+  /* White */
+
+  color: #ffffff;
+}
+// ==============about-decs
+.about-decs {
+  display: flex;
+  margin-top: 80px;
+}
+.about-decs-left {
+  width: 538px;
+  margin-right: 120px;
+}
+.about-decs-left__header {
+  width: 513px;
+  margin-bottom: 34px;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 51px;
+  text-transform: uppercase;
+
+  /* Black */
+
+  color: #282739;
+}
+.about-decs-left__title {
+  margin-bottom: 15px;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  /* identical to box height */
+
+  /* Black */
+
+  color: #282739;
+}
+.about-decs-left__desc {
+  width: 538px;
+  margin-bottom: 35px;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+
+  /* Black */
+
+  color: #282739;
+}
+.about-decs-left__pec {
+  width: 500px;
+  margin-bottom: 20px;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+
+  /* Black */
+
+  color: #282739;
+}
+.about-decs-left__pec-list {
+  display: flex;
+  flex-direction: column;
+}
+.about-decs-left__pec-item:not(:last-child) {
+  margin-bottom: 10px;
+}
+.about-decs-left__pec-item {
+  display: flex;
+}
+.about-decs-left__pec-img {
+  margin-right: 10px;
+}
+.about-decs-left__pec-desc {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  /* identical to box height */
+
+  /* Black */
+
+  color: #282739;
+}
+.about-decs-img {
+  display: block;
+  width: 452px;
+  height: 352px;
 }

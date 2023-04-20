@@ -1,0 +1,79 @@
+.cart-main {
+  height: 223px;
+  display: flex;
+}
+.cart-wrapper {
+  display: flex;
+  align-items: center;
+}
+.cart-img {
+  margin-right: 20px;
+  width: 75px;
+  height: 75px;
+  display: block;
+}
+.cart-header {
+  margin-right: 20px;
+  width: 240px;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  /* identical to box height */
+
+  /* Black */
+
+  color: #282739;
+}
+
+.cart-desc {
+  margin-right: 69px;
+  /* 20 px (medium) */
+
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  /* identical to box height */
+
+  /* Black */
+
+  color: #282739;
+}
+.cart-button-wrapper {
+  margin-right: 50px;
+  display: flex;
+  align-items: center;
+  background: #f4f7fb;
+  border-radius: 5px;
+  width: 106px;
+  height: 38px;
+}
+.cart-button-wrapper__button {
+  width: 40px;
+  border: none;
+  background-color: transparent;
+}
+
+.cart-button-wrapper__span {
+  width: 26px;
+  text-align: center;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+
+  /* Black */
+
+  color: #282739;
+}
+.cart-button-wrapper__button-delete {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.cart-button-wrapper__button-img {
+}

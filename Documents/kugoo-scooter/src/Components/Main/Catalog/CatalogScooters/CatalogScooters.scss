@@ -1,0 +1,99 @@
+.catalog {
+  margin-top: 57px;
+  margin-bottom: 100px;
+}
+
+.catalog-banner {
+  margin-bottom: 53px;
+  position: relative;
+}
+.catalog-banner-img {
+}
+.catalog-banner-header {
+  position: absolute;
+  top: 75px;
+  left: 136px;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 51px;
+  /* identical to box height */
+
+  text-transform: uppercase;
+
+  /* White */
+
+  color: #ffffff;
+}
+.catalog-filter-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.catalog-filter-row__header {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 36px;
+  text-transform: uppercase;
+
+  /* Black */
+
+  color: #282739;
+  margin-right: 612px;
+}
+.catalog-filter-row__decs {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+
+  /* Black */
+
+  color: #282739;
+  margin-right: 20px;
+}
+.catalog-filter-row__button {
+  display: flex;
+  cursor: pointer;
+  padding: 0 20px;
+  align-items: center;
+  margin-right: 20px;
+
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 17px;
+
+  /* Purple */
+
+  color: #6f73ee;
+
+  height: 37px;
+
+  /* Purple */
+
+  border: 1.3px solid #6f73ee;
+  border-radius: 5px;
+}
+.catalog-filter-row__img {
+  margin-left: 17px;
+}
+.catalog-filter-main {
+  display: flex;
+}
+.catalog-filter-main__left {
+  margin-right: 30px;
+}
+.catalog-filter-main__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.catalog-filter-main__item {
+}
+.catalog-filter-main__card {
+}

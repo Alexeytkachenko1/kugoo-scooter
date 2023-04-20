@@ -1,0 +1,59 @@
+.filters {
+  background: #f4f7fb;
+  border-radius: 10px;
+  width: 255px;
+  height: 633px;
+}
+.filters-wrapper {
+  padding: 20px;
+  display: flex;
+
+  flex-direction: column;
+}
+.filters-header {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  /* identical to box height */
+
+  /* Black */
+
+  color: #282739;
+}
+.filters-title {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  /* identical to box height */
+
+  /* Black */
+
+  color: #282739;
+}
+
+.filters-button {
+  margin-top: 28px;
+  display: block;
+  margin: 0 auto;
+  background-color: transparent;
+  border: none;
+  width: 154px;
+  height: 20px;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+
+  /* Purple */
+
+  color: #6f73ee;
+}
+.filters-button-img {
+  margin-left: 6px;
+}

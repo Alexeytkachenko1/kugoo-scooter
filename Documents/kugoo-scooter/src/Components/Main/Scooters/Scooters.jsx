@@ -18,44 +18,85 @@ import myJson from "../../../data.json";
 import Card from "./Card/Card";
 import { useSelector } from "react-redux";
 import { createSelector } from "reselect";
+import { db } from "../../../firebase/firebase";
+import { getDocs, collection } from "firebase/firestore";
+import Spinner from "../Spinner";
+import { setScooters, setName, setPassword } from "../../../actions/index";
+import { useDispatch } from "react-redux";
 
 const Scooters = () => {
+  // const [data, setData] = useState([]);
+  const [error, setError] = useState(false);
   const navigate = useNavigate();
-  const scootersData = createSelector(
-    (state) => state.scooters,
-    (scooters) => {
+  const dispatch = useDispatch();
+  const scootersDataVar = createSelector(
+    (state) => state.scooters.scootersData,
+    (state) => state.user,
+    (scooters, user) => {
       return {
         scooters,
+        user,
       };
     }
   );
-  const data = useSelector(scootersData);
+  const data = useSelector(scootersDataVar);
   console.log(data);
-  let [products, setProducts] = useState([]);
-  useEffect(() => {
-    // axios
-    //   .get(
-    //     "https://my-json-server.typicode.com/Alexeytkachenko1/my-json-server/scooters"
-    //   )
-    //   .then((response) => {
-    //     setProducts(response.data);
-    //   });
-    let data = JSON.parse(JSON.stringify(myJson));
-    setProducts(data.scooters);
-  }, []);
-  // const showMoreHandler = (productId) => {
-  //   navigate(`product/${productId}`);
-  // };
 
-  const cards = products.map((product) => (
+  //*************** */
+  // let [products, setProducts] = useState([]);
+  // useEffect(() => {
+  //   // axios
+  //   //   .get(
+  //   //     "https://my-json-server.typicode.com/Alexeytkachenko1/my-json-server/scooters"
+  //   //   )
+  //   //   .then((response) => {
+  //   //     setProducts(response.data);
+  //   //   });
+  //   let data = JSON.parse(JSON.stringify(myJson));
+  //   setProducts(data.scooters);
+  // }, []);
+  // const user = {
+  //   name: "Alex",
+  //   age: 18,
+  // };
+  useEffect(() => {
+    // localStorage.setItem("user", JSON.stringify(user));
+    if (data.scooters.length === 0) {
+      getDocs(collection(db, "catalog-scooters"))
+        .then((docs) =>
+          docs.forEach((item) => dispatch(setScooters(item.data())))
+        )
+        .catch(() => setError(true));
+    } else return;
+  }, []);
+  if (error) {
+    return <div>"ERROR</div>;
+  }
+
+  const cards = data.scooters.map((product) => (
     <Card {...product} key={product.id} />
   ));
 
   return (
-    <section className="scooters container">
-      <h2 className="scooters-header">Электросамокаты</h2>
-      <div className="scooters-wrapper">{cards}</div>
-    </section>
+    <>
+      {/* <input
+        type="text"
+        value={data.user.name}
+        onChange={(e) => dispatch(setName(e.target.value))}
+      />
+      <input
+        type="text"
+        value={data.user.password}
+        onChange={(e) => dispatch(setPassword(e.target.value))}
+      /> */}
+      {data.length === 0 && <Spinner />}
+      {data.length !== 0 && (
+        <section className="scooters container">
+          <h2 className="scooters-header">Электросамокаты</h2>
+          <div className="scooters-wrapper">{cards}</div>
+        </section>
+      )}
+    </>
   );
 };
 

@@ -10,6 +10,8 @@ import "swiper/css/navigation";
 import { db } from "../../../firebase/firebase";
 import { getDocs, collection } from "firebase/firestore";
 import Spinner from "../Spinner";
+import { NavLink } from "react-router-dom";
+import Catalog from "../Catalog/Catalog";
 const Slider = () => {
   // const [sliders, setSliders] = useState([]);
   const [data, setData] = useState([]);
@@ -55,7 +57,7 @@ const Slider = () => {
           modules={[Pagination, Navigation]}
           className="mySwiper"
         >
-          {data.map((slider) => {
+          {data.map((slider, index) => {
             return (
               <SwiperSlide>
                 <img
@@ -63,9 +65,14 @@ const Slider = () => {
                   src={slider.image}
                   alt={`img_slider_${slider.id}`}
                 />
-                <div className="hero-wrapper">
+                <div className={`wrapper-${index}`}>
                   <h3 className="hero-header">{slider.title}</h3>
                   <p className="hero-text">{slider.text}</p>
+                  {slider.button && (
+                    <button className="hero-button">
+                      <NavLink to="/catalog">Catalog</NavLink>
+                    </button>
+                  )}
                 </div>
               </SwiperSlide>
             );

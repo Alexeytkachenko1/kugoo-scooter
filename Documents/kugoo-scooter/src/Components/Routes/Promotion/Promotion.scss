@@ -1,0 +1,70 @@
+.blog {
+  position: relative;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.blog-img {
+  display: block;
+  border-radius: 6px;
+}
+.blog-header-prom {
+  width: 612px;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 51px;
+  /* identical to box height */
+
+  text-transform: uppercase;
+
+  /* White */
+
+  color: #ffffff;
+
+  position: absolute;
+  top: 75px;
+  left: 133px;
+}
+.testDrive-wrapper {
+  position: absolute;
+  top: 33px;
+  left: 137px;
+  display: flex;
+}
+.testDrive-button-left {
+  margin-right: 10px;
+  background: #ee685f;
+  /* Orange */
+
+  border: 1px solid #ee685f;
+  border-radius: 5px;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+
+  /* White */
+
+  color: #ffffff;
+}
+.testDrive-button-right {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+
+  /* White */
+
+  color: #ffffff;
+  background: #75d14a;
+  //   /* Green */
+
+  border: 1px solid #75d14a;
+  border-radius: 5px;
+}

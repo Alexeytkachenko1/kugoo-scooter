@@ -1,0 +1,89 @@
+.catalog {
+  position: relative;
+  margin-top: 57px;
+}
+
+.catalog-img {
+  margin-bottom: 100px;
+}
+.catalog-header {
+  position: absolute;
+  top: 75px;
+  left: 135px;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 51px;
+  /* identical to box height */
+
+  text-transform: uppercase;
+
+  /* White */
+
+  color: #ffffff;
+}
+.catalog-wrapper__list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+.catalog-wrapper__item {
+  width: 255px;
+  height: 255px;
+  position: relative;
+}
+.catalog-wrapper__link {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 2;
+}
+.catalog-wrapper__item:not(:last-child) {
+  margin-right: 30px;
+}
+.catalog-wrapper__img {
+  border-radius: 10px;
+
+  width: 100%;
+  height: 100%;
+}
+.catalog-wrapper__img-container {
+  padding-top: 10px;
+  padding-left: 16px;
+  width: 233px;
+  height: 69px;
+  position: absolute;
+  top: 176px;
+  left: 16px;
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 10px;
+}
+.catalog-wrapper__img-title {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  /* identical to box height */
+
+  /* White */
+
+  color: #ffffff;
+}
+.catalog-wrapper__desc {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+
+  /* White */
+
+  color: #ffffff;
+}
